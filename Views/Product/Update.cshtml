@@ -1,0 +1,21 @@
+@model Product
+<h2>Update Product</h2>
+<form method="post">
+     <div>
+        <label>Id</label>
+        <input asp-for="Id" />
+    </div>
+    <div>
+        <label>Name</label>
+        <input asp-for="Name"/>
+    </div>
+    <div>
+        <label>Price</label>
+        <input asp-for="Price" />
+    </div>
+     <button type="submit">Update</button>
+     <a asp-action="Index">Exit</a>
+     <a asp-action="GetById">Get By Id</a>
+     <a asp-action="Create">Create</a>  
+     <a asp-action="Delete">Delete</a>
+</form>

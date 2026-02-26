@@ -1,0 +1,11 @@
+@model Product
+<h1>Product</h1>
+    <p>Id: @Model.Id</p>
+    <p>Name: @Model.Name</p>
+    <p>Price: @Model.Price</p>
+<p><a asp-action="Create">Create new product</a></p>
+  <a asp-action="Index">Get All</a>
+  <a asp-action="GetById">Get By Id All</a>  
+  <a asp-action="Create">Create</a>  
+  <a asp-action="Update">Update</a>
+  <a asp-action="Delete">Delete</a>

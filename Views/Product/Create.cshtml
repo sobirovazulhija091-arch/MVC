@@ -1,0 +1,19 @@
+@model Product
+<h2>Create Product</h2>
+<form method="post">
+     <div>
+        <label>Id</label>
+        <input asp-for="Id" />
+    </div>
+
+    <div>
+        <label>Name</label>
+        <input asp-for="Name" />
+    </div>
+
+    <div>
+        <label>Price</label>
+        <input asp-for="Price" />
+    </div>
+    <button type="submit">Save</button>
+</form>

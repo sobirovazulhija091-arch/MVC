@@ -1,0 +1,14 @@
+@model List<Product>
+@foreach (var p in Model)
+{
+    <h3>@p.Name</h3>
+    <p><strong>ID:</strong> @p.Id</p>
+    <p><strong>Name:</strong> @p.Name</p>
+    <p><strong>Price:</strong> $@p.Price</p>
+      <p><a asp-action="GetById" asp-route-id="@p.Id">Get bY Id</a></p>
+}
+<a asp-action="Create">Create</a>
+<a asp-action="Update">Update</a>
+<a asp-action="Delete">Delete</a> 
+<a asp-action="GetById">Get By Id</a>  
+
