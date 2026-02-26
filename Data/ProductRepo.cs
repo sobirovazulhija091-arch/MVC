@@ -15,11 +15,11 @@ public class ProductRepo
          var product = products.Find(x=>x.Id==id)??new Product();
         return product;
     }
-    public  List<Product> Delete(int id)
+    public Product Delete(int id)
     {
          var product = products.Find(x=>x.Id==id);
         products.Remove(product);
-        return products;
+        return product;
     }
     public  Product Update(int id,Product product)
     {

@@ -1,14 +1,32 @@
 @model List<Product>
-@foreach (var p in Model)
-{
-    <h3>@p.Name</h3>
-    <p><strong>ID:</strong> @p.Id</p>
-    <p><strong>Name:</strong> @p.Name</p>
-    <p><strong>Price:</strong> $@p.Price</p>
-      <p><a asp-action="GetById" asp-route-id="@p.Id">Get bY Id</a></p>
-}
-<a asp-action="Create">Create</a>
-<a asp-action="Update">Update</a>
-<a asp-action="Delete">Delete</a> 
-<a asp-action="GetById">Get By Id</a>  
 
+<h2 class="title">Product List</h2>
+
+<table class="product-table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var p in Model)
+    {
+        <tr>
+            <td>@p.Id</td>
+            <td>@p.Name</td>
+            <td>$@p.Price</td>
+            <td>
+                <a asp-action="GetById" asp-route-id="@p.Id" class="btn btn-info">View</a>
+                <a asp-action="Update" asp-route-id="@p.Id" class="btn btn-warning">Edit</a>
+                <a asp-action="Delete" asp-route-id="@p.Id" class="btn btn-danger">Delete</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+<div class="bottom-links">
+    <a asp-action="Create" class="btn btn-primary">Create New</a>
+</div>

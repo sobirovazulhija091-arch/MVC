@@ -21,7 +21,6 @@ C:\Users\Azik\Desktop\Mvc\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
 C:\Users\Azik\Desktop\Mvc\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Azik\Desktop\Mvc\obj\Debug\net9.0\scopedcss\bundle\Mvc.styles.css
 C:\Users\Azik\Desktop\Mvc\obj\Debug\net9.0\scopedcss\projectbundle\Mvc.bundle.scp.css
-C:\Users\Azik\Desktop\Mvc\obj\Debug\net9.0\compressed\klshiv3obm-b9sayid5wm.gz
 C:\Users\Azik\Desktop\Mvc\obj\Debug\net9.0\compressed\5zaeiiofdi-61n19gt1b8.gz
 C:\Users\Azik\Desktop\Mvc\obj\Debug\net9.0\compressed\llplir2nw9-xtxxf3hu2r.gz
 C:\Users\Azik\Desktop\Mvc\obj\Debug\net9.0\compressed\4roe6mqf87-bqjiyaj88i.gz
@@ -94,3 +93,5 @@ C:\Users\Azik\Desktop\Mvc\obj\Debug\net9.0\refint\Mvc.dll
 C:\Users\Azik\Desktop\Mvc\obj\Debug\net9.0\Mvc.pdb
 C:\Users\Azik\Desktop\Mvc\obj\Debug\net9.0\Mvc.genruntimeconfig.cache
 C:\Users\Azik\Desktop\Mvc\obj\Debug\net9.0\ref\Mvc.dll
+C:\Users\Azik\Desktop\Mvc\obj\Debug\net9.0\Mvc.sourcelink.json
+C:\Users\Azik\Desktop\Mvc\obj\Debug\net9.0\compressed\klshiv3obm-gmzgw7n6mt.gz

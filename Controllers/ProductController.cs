@@ -29,10 +29,11 @@ public class ProductController(ProductRepo productRepo):Controller
          var product = repo.Delete(id);
             return View(product);
     }
-      public IActionResult Update()
-    {
-        return View();
-    }
+    public IActionResult Update(int id)
+{
+    var product = repo.products.Find(x => x.Id == id);
+    return View(product);  
+}
     [HttpPost]
     public IActionResult Update(int id,Product product)
     {

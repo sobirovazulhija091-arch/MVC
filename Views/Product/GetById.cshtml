@@ -1,11 +1,17 @@
 @model Product
-<h1>Product</h1>
-    <p>Id: @Model.Id</p>
-    <p>Name: @Model.Name</p>
-    <p>Price: @Model.Price</p>
-<p><a asp-action="Create">Create new product</a></p>
-  <a asp-action="Index">Get All</a>
-  <a asp-action="GetById">Get By Id All</a>  
-  <a asp-action="Create">Create</a>  
-  <a asp-action="Update">Update</a>
-  <a asp-action="Delete">Delete</a>
+
+    <div class="product-card">
+        <h1>Product Details</h1>
+
+        <p><strong>Id:</strong> @Model.Id</p>
+        <p><strong>Name:</strong> @Model.Name</p>
+        <p><strong>Price:</strong> $@Model.Price</p>
+
+        <div class="buttons">
+            <a asp-action="Update" asp-route-id="@Model.Id" class="btn btn-warning">Edit</a>
+            <a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger">Delete</a>
+            <a asp-action="Index" class="btn btn-secondary">Back</a>
+            <a asp-action="Create" class="btn btn-primary">Create New</a>
+        </div>
+    </div>
+}
