@@ -1,5 +1,4 @@
 using Microsoft.AspNetCore.Mvc;
-
 public class ProductController(ProductRepo productRepo):Controller
 {
     private readonly ProductRepo repo = productRepo;
@@ -21,23 +20,23 @@ public class ProductController(ProductRepo productRepo):Controller
     }
     public IActionResult GetById(int id)
     { 
-        var product = repo.GetById(id);
+            var product = repo.GetById(id);
             return View(product);
     }
     public IActionResult Delete(int id)
     {
-         var product = repo.Delete(id);
+            var product = repo.Delete(id);
             return View(product);
     }
     public IActionResult Update(int id)
-{
-    var product = repo.products.Find(x => x.Id == id);
-    return View(product);  
-}
+    {
+         var product = repo.products.Find(x => x.Id == id);
+         return View(product);  
+    }
     [HttpPost]
     public IActionResult Update(int id,Product product)
     {
-           var p = repo.Update(id,product);
+         var p = repo.Update(id,product);
          return RedirectToAction(nameof(Index));
     }
 }

@@ -1,13 +1,12 @@
-@model Product
+@model Category
 
 <div class="delete-container">
-    <h1>Are you sure you want to delete this product?</h1>
+    <h1>Are you sure you want to delete this category?</h1>
 
     <div class="product-info">
         <p><strong>ID:</strong> @Model.Id</p>
         <p><strong>Name:</strong> @Model.Name</p>
-        <p><strong>Categoru Id:</strong> @Model.CategoryId</p>
-        <p><strong>Price:</strong> $@Model.Price</p>
+        <p><strong>Description:</strong> @Model.Description</p>
     </div>
 
     <form asp-action="Delete" method="post">

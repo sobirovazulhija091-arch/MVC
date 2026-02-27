@@ -1,6 +1,6 @@
-@model Product
+@model Category
 
-<h2 class="title">Update Product</h2>
+<h2 class="title">Update Category</h2>
 
 <div class="form-container">
     <form asp-action="Update" method="post">
@@ -14,14 +14,9 @@
             <input asp-for="Name" class="form-input"/>
         </div>
 
-          <div class="form-group">
-            <label>Category Id</label>
-            <input asp-for="CategoryId" class="form-input"/>
-        </div>
-
         <div class="form-group">
-            <label>Price</label>
-            <input asp-for="Price" class="form-input"/>
+            <label>Description</label>
+            <input asp-for="Description" class="form-input"/>
         </div>
 
         <div class="buttons">

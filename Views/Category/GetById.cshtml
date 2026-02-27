@@ -1,12 +1,11 @@
-@model Product
+@model Category
 
     <div class="product-card">
-        <h1>Product Details</h1>
+        <h1>Category Details</h1>
 
         <p><strong>Id:</strong> @Model.Id</p>
         <p><strong>Name:</strong> @Model.Name</p>
-        <p><strong>Category Id:</strong> $@Model.CategoryId</p>
-        <p><strong>Price:</strong> $@Model.Price</p>
+        <p><strong>Description:</strong> @Model.Description</p>
 
         <div class="buttons">
             <a asp-action="Update" asp-route-id="@Model.Id" class="btn btn-warning">Edit</a>

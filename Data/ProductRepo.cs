@@ -13,7 +13,7 @@ public class ProductRepo
     public Product GetById(int id)
     {
          var product = products.Find(x=>x.Id==id)??new Product();
-        return product;
+         return product;
     }
     public Product Delete(int id)
     {
@@ -26,6 +26,7 @@ public class ProductRepo
          var p = products.Find(x=>x.Id==id);
          if (p == null){return null!;}
          p.Name=product.Name;
+         p.CategoryId=product.CategoryId;
          p.Price=product.Price;
           return p;
     }
