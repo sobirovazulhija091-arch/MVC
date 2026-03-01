@@ -1,35 +1,36 @@
-@model List<Product>
+<div class="product-container">
+    <div class="header-section">
+        <h2> Product List</h2>
+        <a asp-action="Create" class="btn btn-create">+ Add Product</a>
+    </div>
 
-<h2 class="title">Product List</h2>
-
-<table class="product-table">
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Category Id</th>
-            <th>Price</th>
-            <th>Actions</th>
-        </tr>
-    </thead>
-    <tbody>
-    @foreach (var p in Model)
-    {
-        <tr>
-            <td>@p.Id</td>
-            <td>@p.Name</td>
-            <td>@p.CategoryId</td>
-            <td>$@p.Price</td>
-
-            <td>
-                <a asp-action="GetById" asp-route-id="@p.Id" class="btn btn-info">View</a>
-                <a asp-action="Update" asp-route-id="@p.Id" class="btn btn-warning">Edit</a>
-                <a asp-action="Delete" asp-route-id="@p.Id" class="btn btn-danger">Delete</a>
-            </td>
-        </tr>
-    }
-    </tbody>
-</table>
-<div class="bottom-links">
-    <a asp-action="Create" class="btn btn-primary">Create New</a>
+    <div class="table-wrapper">
+        <table class="product-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th class="actions-column">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+            @foreach (var p in Model)
+            {
+                <tr>
+                    <td>@p.Id</td>
+                    <td class="product-name">@p.Name</td>
+                    <td>@p.CategoryId</td>
+                    <td class="price">$@p.Price</td>
+                    <td class="actions">
+                        <a asp-action="GetById" asp-route-id="@p.Id" class="btn btn-view">View</a>
+                        <a asp-action="Update" asp-route-id="@p.Id" class="btn btn-edit">Edit</a>
+                        <a asp-action="Delete" asp-route-id="@p.Id" class="btn btn-delete">Delete</a>
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
 </div>

@@ -1,0 +1,26 @@
+
+    <div class="register-container">
+        <h2>Register</h2>
+
+        <form action="/Account/Register" method="post">
+            
+            <div class="validation-summary">
+                <!-- Validation errors here -->
+            </div>
+
+            <div class="form-group">
+                <label for="Email">Email</label>
+                <input type="email" id="Email" name="Email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Password">Password</label>
+                <input type="password" id="Password" name="Password" required>
+            </div>
+
+            <button type="submit" class="btn" asp-action="Create">Register</button>
+
+            <a href="/Home/Index" class="back-link">Back</a>
+        </form>
+    </div>
+
