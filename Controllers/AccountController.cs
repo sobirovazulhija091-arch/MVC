@@ -8,9 +8,6 @@ using mvc.Models;
     private readonly UserManager<ApplicationUser> _userManager;
     private readonly SignInManager<ApplicationUser> _signInManager;
 
-    // [BindProperty]
-    // public AuthDto authDto {get; set;}=new();
-
     public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager)
     {
         _userManager = userManager;
@@ -58,5 +55,5 @@ using mvc.Models;
         return RedirectToAction("Index", "Home");
     }
 
-    public IActionResult Denied() => View();
+   
 }

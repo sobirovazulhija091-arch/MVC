@@ -1,6 +1,5 @@
 using System;
 using Microsoft.AspNetCore.Identity;
-
 public class DefaultRoles
 {
     public static async Task SeedRoles(RoleManager<IdentityRole> roleManager)
